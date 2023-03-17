@@ -7,9 +7,12 @@
 /* betty style doc for function main goes there */
 
 /**
- *  main- here is where the code start
- *      executing.
-*/
+ * main- this is where the main starts
+ * executing.
+ *
+ * Return: Always(0)
+ */
+
 int main(void)
 {
 	int n;
