@@ -15,11 +15,12 @@
 int main(void)
 {
 	int n;
+	int rem;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	int rem = n % 10;
+	rem = n % 10;
 
 	if ((rem < 6) && (rem != 0))
 		printf("Last digit of %d is %d and is less than 6 and not 0", n, rem);
