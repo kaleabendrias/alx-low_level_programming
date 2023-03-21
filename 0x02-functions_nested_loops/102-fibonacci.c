@@ -9,13 +9,11 @@ int main(void)
 	int x;
 	int y;
 	int next;
-	int r;
 	int i;
 
 	x = 0;
 	y = 1;
 	next = 2;
-	r = 0;
 
 	for (i = 3; i < 50; i++)
 	{
