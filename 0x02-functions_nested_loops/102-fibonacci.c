@@ -13,7 +13,6 @@ int main(void)
 
 	x = 0;
 	y = 1;
-	next = 2;
 
 	for (i = 3; i < 50; i++)
 	{
