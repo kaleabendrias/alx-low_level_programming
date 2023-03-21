@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * main - Entry point.
- * Description: write a program that prints "_putchar" followed by a new line.
- * Return: Always 0 (Success.)
+ * print_alphabet - Entry point
+ * Return: void
  */
 
 void print_alphabet(void)
