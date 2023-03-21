@@ -17,11 +17,15 @@ int main(void)
 	next = 2;
 	r = 0;
 
-	for (i = 3; i < 4000000; i++)
+	for (i = 3; i < 50; i++)
 	{
 		x = y;
 		y = next;
 		next = x + y;
+		printf("%d", x);
+		if ( i == 49)
+			printf("\n");
+		printf(", ");
 	}
 
 	return (0);
