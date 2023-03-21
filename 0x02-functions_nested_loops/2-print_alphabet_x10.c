@@ -2,12 +2,11 @@
 #include "main.h"
 
 /**
- * main - Entry point.
- * Description: write a program that prints "_putchar" followed by a new line.
- * Return: Always 0 (Success.)
+ * print_alphabet_x10 - make alphabet x10
+ * Return: void
  */
 
-int main(void)
+void print_alphabet_x10(void)
 {
 	char x;
 	int i;
@@ -27,6 +26,5 @@ int main(void)
 	}
 	_putchar('\n');
 
-	return (0);
 }
 
