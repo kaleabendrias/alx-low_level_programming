@@ -6,19 +6,16 @@
  * Return: Always 0 (Success.)
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	char c;
+	char x;
 
-	c = 'a';
-	while (c <= 'z')
+	x = 'a';
+	while (x <= 'z')
 	{
-		_putchar(c);
-		c++;
+		_putchar(x);
+		x++;
 	}
-
 	_putchar('\n');
-
-	return (0);
 }
 
