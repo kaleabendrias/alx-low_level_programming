@@ -6,23 +6,20 @@
 
 int main(void)
 {
-	int x;
-	int y;
-	int next;
-	int i;
+	unsigned long count, i, j, k;
 
-	x = 0;
-	y = 1;
-
-	for (i = 3; i < 50; i++)
+	i = 0;
+	j = 1;
+	for (count = 0; count < 50; count++)
 	{
-		x = y;
-		y = next;
-		next = x + y;
-		printf("%d", x);
-		if ( i == 49)
-			printf("\n");
-		printf(", ");
+		k = i +j;
+		i = j;
+		j = k;
+		printf("%lu", k);
+		if (count == 49)
+			putchar('\n');
+		else
+			printf(", ");
 	}
 
 	return (0);
