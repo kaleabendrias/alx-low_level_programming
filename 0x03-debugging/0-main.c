@@ -1,22 +1,17 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * _abs - calculate the absolute value of the number from zero.
- * @i: the integer to be compared.
- * Return: nothing is returned.
- */
+* main - tests function that prints if integer is positive or negative
+* Return: 0
+*/
 
-void pos(int i)
+int main(void)
 {
-	if (n > 0)
-	{
-		printf("%d is negative", n);
-	}
-	else if ( n < 0)
-	{
-		printf("%d is negative", n);
-	}
-	else
-		printf("%d is zero" n);
+	int i;
+
+	i = 98;
+	positive_or_negative(i);
+
+	return (0);
 }
 
