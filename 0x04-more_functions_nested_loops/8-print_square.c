@@ -1,4 +1,4 @@
-#include "math.h"
+#include "main.h"
 
 /**
  * print_square - prints the char # as much as size.
