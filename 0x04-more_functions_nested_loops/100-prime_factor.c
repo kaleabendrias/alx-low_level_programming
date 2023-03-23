@@ -9,14 +9,14 @@
 int main(void)
 {
 	long x;
-	int max;
+	long max;
 	long number;
 	double sq;
 
 	number = 612852475143;
 	sq = sqrt(number);
 
-	for (x = 0; x <= sq; x++)
+	for (x = 1; x <= sq; x++)
 	{
 		if (number % x == 0)
 		{
