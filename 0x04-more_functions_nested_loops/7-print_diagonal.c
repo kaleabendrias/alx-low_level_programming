@@ -2,6 +2,7 @@
 
 /**
  * print_diagonal - draws diagonal line.
+ * @n: placeholder.
  * Return: void.
  */
 
