@@ -23,6 +23,5 @@ void rev_string(char *s)
 		s[j] = temp;
 		j--;
 	}
-	_putchar('\n');
 }
 
