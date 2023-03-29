@@ -22,7 +22,7 @@ char *leet(char *str)
 		{
 			if (str[i] == repl[j][0] || str[i] == repl[j][0] - 32)
 			{
-				str[i] = replacements[j][1];
+				str[i] = repl[j][1];
 				break;
 			}
 		}
