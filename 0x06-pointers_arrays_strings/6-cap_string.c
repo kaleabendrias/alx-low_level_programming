@@ -13,6 +13,10 @@ char *cap_string(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
+		if (str[i] == '\t')
+		{
+			str[i] = ' ';
+		}
 		if (i == 0 || str[i - 1] == ' ' || str[i - 1] == '.')
 		{
 			if (str[i] >= 97 && str[i] <= 122)
