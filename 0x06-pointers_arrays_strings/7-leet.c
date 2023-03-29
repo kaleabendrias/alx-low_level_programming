@@ -9,32 +9,22 @@
 char *leet(char *str)
 {
 	int i, j;
-
-	for (int i = 0; str[i] != '\0'; i++)
+	char repl[5][2] = {
+		{'a', '4'},
+		{'e', '3'},
+		{'o', '0'},
+		{'t', '7'},
+		{'l', '1'}
+	};
+	for (i = 0; str[i]; i++)
 	{
-		if (str[i] == 'a' || str[i] == 'A')
+		for (int j = 0; j < 5; j++)
 		{
-			str[i] = '4';
-		}
-		else if (str[i] == 'e' || str[i] == 'E')
-		{
-			str[i] = '3';
-		}
-		else if (str[i] == 'o' || str[i] == 'O')
-		{
-			str[i] = '0';
-		}
-		else if (str[i] == 't' || str[i] == 'T')
-		{
-			str[i] = '7';
-		}
-		else if (str[i] == 'l' || str[i] == 'L')
-		{
-			str[i] = '1';
-		}
-		else
-		{
-			str[i] = str[i];
+			if (str[i] == repl[j][0] || str[i] == repl[j][0] - 32)
+			{
+				str[i] = replacements[j][1];
+				break;
+			}
 		}
 	}
 	return (str);
