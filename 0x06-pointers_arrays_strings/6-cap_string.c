@@ -19,7 +19,7 @@ char *cap_string(char *str)
 		}
 		if (i == 0 || str[i - 1] == ' ' || str[i - 1] == '.' || str[i - 1] == '\n')
 		{
-			if (str[i] >= 97 && str[i] <= 122)
+			if (str[i] >= 'a' && str[i] <= 'z')
 			{
 				str[i] -= 32;
 			}
