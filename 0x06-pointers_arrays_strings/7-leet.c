@@ -18,7 +18,7 @@ char *leet(char *str)
 	};
 	for (i = 0; str[i]; i++)
 	{
-		for (int j = 0; j < 5; j++)
+		for (j = 0; j < 5; j++)
 		{
 			if (str[i] == repl[j][0] || str[i] == repl[j][0] - 32)
 			{
