@@ -10,7 +10,7 @@ void print_number(int n)
 {
 	char neg;
 
-	neg = '-';
+	neg = 45;
 	if (n < 0)
 	{
 		_putchar(neg);
