@@ -8,7 +8,9 @@
 
 void print_number(int n)
 {
-	char neg = '-';
+	char neg;
+
+	neg = '-';
 	if (n < 0)
 	{
 		_putchar(neg);
