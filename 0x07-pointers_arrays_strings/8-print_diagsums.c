@@ -24,7 +24,7 @@ void print_diagsums(int *a, int size)
 			}
 			if (i == size - j - 1)
 			{
-				sum2 = *(a + i * size + j);
+				sum2 += *(a + i * size + j);
 			}
 		}
 	}
