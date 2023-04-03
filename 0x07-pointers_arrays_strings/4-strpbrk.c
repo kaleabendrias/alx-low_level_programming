@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
  * _strpbrk - locates a character.
@@ -9,16 +10,18 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	int count;
+	int i, j;
 
-	count = 0;
-	while (s[i] != '\0')
+	for (i = 0; s[i] !='\0'; i++)
 	{
-		if (strchr(accept, s[count]) != NULL)
+		for (j = 0; accept[j] !='\0'; j++)
 		{
-			return (&s[count]);
+			if (s[i] == accept[j])
+			{
+				return (&s[i]);
+				break;
+			}
 		}
-		count++;
 	}
 	return (NULL);
 }
