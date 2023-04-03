@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
  * _strspn - returns number of occurence.
@@ -16,11 +17,11 @@ unsigned int _strspn(char *s, char *accept)
 	{
 		if (strchr(accept, s[count]) != NULL)
 		{
-			i++;
+			count++;
 		}
 		else
 		{
-			return (i);
+			return (count);
 		}
 	}
 	return (i);
