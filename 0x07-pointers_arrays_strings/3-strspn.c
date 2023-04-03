@@ -15,7 +15,7 @@ unsigned int _strspn(char *s, char *accept)
 	count++;
 	while (s[count] != '\0')
 	{
-		if (strchr(accept, s[count]) != NULL)
+		if (_strchr(accept, s[count]) != NULL)
 		{
 			count++;
 		}
@@ -24,6 +24,6 @@ unsigned int _strspn(char *s, char *accept)
 			return (count);
 		}
 	}
-	return (i);
+	return (count);
 }
 
