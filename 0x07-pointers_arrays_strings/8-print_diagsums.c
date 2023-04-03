@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_diagsums - adds main and secondary diagonal.
@@ -9,7 +10,7 @@
 
 void print_diagsums(int *a, int size)
 {
-	int sum1, sum1, i, j;
+	int sum1, sum2, i, j;
 
 	sum1 = 0;
 	sum2 = 0;
