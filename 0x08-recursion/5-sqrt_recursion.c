@@ -18,7 +18,13 @@ int sq(int n, int a)
 	if (a * a == n)
 		return (a);
 	return (sq(n, a + 1));
+
 }
+/**
+ * _sqrt_recursion - returns the square root of number.
+ * @n: placeholder for the num.
+ * Return: ALways int.
+ */
 
 int _sqrt_recursion(int n)
 {
