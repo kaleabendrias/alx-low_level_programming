@@ -1,1 +1,1 @@
-README for c programming
+Read me for debugging
