@@ -21,9 +21,9 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (0);
 	}
-	if (atoi(argv[1]) == 0)
+	if (atoi(argv[1]) < 0)
 	{
-		printf("%d", 0);
+		printf("%d\n", 0);
 		return (0);
 	}
 	while (y != 0)
