@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 	int count;
 
 	count = 0;
-	for (i = 0; i < argc && *argv[argc-1] != '\0'; i++)
+	for (i = 0; i < argc && *argv[argc - 1] != '\0'; i++)
 		count++;
 	printf("%d\n", count);
 	return (0);
