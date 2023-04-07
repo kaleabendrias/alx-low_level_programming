@@ -14,14 +14,14 @@ int main(int argc, char *argv[])
 	int cents[] = {25, 10, 5, 2, 1};
 
 	x = 0;
-	y = atoi(argv[1]);
 	count = 0;
-	if (argc > 2)
+	if (argc != 2)
 	{
 		printf("Error\n");
-		return (0);
+		return (1);
 	}
-	if (atoi(argv[1]) < 0)
+	y = atoi(argv[1]);
+	if (y < 0)
 	{
 		printf("%d\n", 0);
 		return (0);
