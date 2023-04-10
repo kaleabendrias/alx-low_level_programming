@@ -33,6 +33,8 @@ char *str_concat(char *s1, char *s2)
 		size2++;
 	}
 	s = malloc((size1 + size2 + 1) * sizeof(char));
+	if (s == NULL)
+		return (NULL);
 	p = s;
 	while (*s1 != '\0')
 	{
