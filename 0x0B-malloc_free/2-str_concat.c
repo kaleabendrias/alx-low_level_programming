@@ -32,14 +32,14 @@ char *str_concat(char *s1, char *s2)
 	p = s;
 	while (*s1 != '\0')
 	{
-		if (*s1 == NULL)
-			p = "";
+		if (s1 == NULL)
+			s1 = "";
 		*p++ = *s1++;
 	}
 	while (*s2 != '\0')
 	{
-		if (*s2 == NULL)
-			p = "";
+		if (s2 == NULL)
+			s2 = "";
 		*p++ = *s2++;
 	}
 	*p = '\0';
