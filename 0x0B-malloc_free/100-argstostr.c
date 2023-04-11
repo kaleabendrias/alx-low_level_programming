@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stddef.h>
+#include <stdlib.h>
 
 /**
  * argstostr - prints strings in a newline.
