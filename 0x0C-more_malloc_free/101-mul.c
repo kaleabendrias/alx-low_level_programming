@@ -10,11 +10,12 @@
 
 int main(int argc, char *argv[])
 {
-	int mu, i, num;
+	long int mu, num;
+	int i;
 	char *endptr;
 
 	mu = 1;
-	if (argc > 3)
+	if (argc != 3)
 	{
 		printf("Error\n");
 		exit(98);
@@ -32,7 +33,7 @@ int main(int argc, char *argv[])
 			mu *= num;
 		}
 	}
-	printf("%d\n", mu);
+	printf("%ld\n", mu);
 	return (0);
 }
 
