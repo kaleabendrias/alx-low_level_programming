@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stddef.h>
-#include <strin.h>
+#include <string.h>
 
 /**
  * string_nconcat - allocates memo for concatenated string.
