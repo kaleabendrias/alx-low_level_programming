@@ -26,6 +26,8 @@ char **strtow(char *str)
 	wordlen = 0;
 	for (n = 0; n < len && str[n] != '\0'; n++)
 	{
+		if (str[n] == ' ')
+			continue;
 		if (str[n] != ' ')
 		{
 			wordlen++;
