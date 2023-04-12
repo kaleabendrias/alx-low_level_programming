@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stddef.h>
+#include <stdlib.h>
 
 /**
  * _realloc - realocates new size to old size.
@@ -26,7 +27,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		return (NULL);
 	if (ptr != NULL)
 	{
-		for (i = 0; i < old_size; i++)
+		for (i = 0; (unsigned int)i < old_size; i++)
 		{
 			((char *)k)[i] = ((char *)ptr)[i];
 		}
