@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 		for (i = 1; i < argc; i++)
 		{
 			num = strtol(argv[i], &endptr, 10);
-			if (*endptr != '\0' && argv[i][0] != '0')
+			if (*endptr != '\0')
 			{
 				printf("Error\n");
 				exit(98);
