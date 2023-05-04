@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * print_binary - changes into binary
  * @n: given int
