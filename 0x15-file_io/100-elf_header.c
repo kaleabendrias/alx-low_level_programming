@@ -53,6 +53,7 @@ void print_elf_header(const Elf64_Ehdr *header)
 	printf("ABI Version:                       %d\n", header->e_ident[8]);
 	printf("Type:                              %u\n", header->e_type);
 	printf("Entry point address:               0x%lx\n", header->e_entry);
+	printf("Number of section headers:         %u\n", header->e_shnum);
 }
 
 /**
