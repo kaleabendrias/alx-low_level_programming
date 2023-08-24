@@ -1,0 +1,14 @@
+# executes school
+
+# compiler
+CC = gcc
+
+# Source files
+SRC = main.c school.c
+
+all: $(SRC)
+	$(CC) $(SRC) -o school
+
+# clean rule to remove the exec
+clean:
+	rm -f school
